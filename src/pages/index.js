@@ -25,8 +25,8 @@ export default function Contact() {
         ...state,
       }),
     })
-      .then(() => console.log("Form successfully submitted"))
-      .catch((error) => alert(error))
+      // .then(() => console.log("Form successfully submitted"))
+      // .catch((error) => alert(error))
   }
 
   return (
@@ -35,6 +35,7 @@ export default function Contact() {
       <form
         name="contact"
         method="post"
+        action="/contact-us/success"
         data-netlify="true"
         data-netlify-honeypot="bot-field"
         onSubmit={handleSubmit}
